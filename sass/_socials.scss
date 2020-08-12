@@ -1,0 +1,87 @@
+.socials{
+    background-color: #171724;
+    font-family: 'Noto Sans', sans-serif;
+    color: #fff;
+    position: relative;
+    z-index: 3;
+    @media screen and(min-width: 1300px){
+        height: 45vh;
+    }
+    &__title{
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 200;
+        font-size: 2.2rem;
+        padding: 2rem 1rem;
+        @media screen and(min-width: 730px){
+            font-size: 2.7rem;
+            padding: 3.5rem 1rem;
+        }
+        @media screen and(min-width: 1024px){
+            font-size: 3.2rem;
+        }
+        @media screen and(min-width: 1300px){
+            font-size: 5.2rem;
+            padding: 5.5rem 1rem;
+        }
+    }
+    &__content{
+        display: flex;
+        width: 100%;
+        padding: 0 2rem 4rem;
+        justify-content: space-evenly;
+        @media screen and(min-width: 1300px){
+            margin-top: 5rem;
+        }
+    }
+    &__description{
+        flex-basis: 70%;
+        font-size: 1.3rem;
+        line-height: 140%;
+        @media screen and(min-width: 730px){
+            font-size: 1.5rem;
+        }
+        @media screen and(min-width: 1024px){
+            flex-basis: 45%;
+            font-size: 1.8rem;
+            line-height: 180%;
+        }
+    }
+    &__list{
+        flex-basis: 30%;
+        font-size: 1.4rem;
+        list-style: none;
+        @media screen and(min-width: 640px){
+            padding-left: 1.5rem;
+        }
+        @media screen and(min-width: 730px){
+            padding-left: 3.5rem;
+        }
+        @media screen and(min-width: 730px){
+            font-size: 1.5rem;
+        }
+        @media screen and(min-width: 1024px){
+            font-size: 1.8rem;
+        }
+        @media screen and(min-width: 1300px){
+            padding-left: 6rem;
+        }
+        &-item{
+            margin-bottom: .7rem;
+            @media screen and(min-width: 1024px){
+                margin-bottom: 1.2rem;
+            }
+            a{
+                color: #fff;
+                text-decoration: none;
+                transition: .3s;
+                &:hover{
+                    color: rgba($color: #fff, $alpha: 0.6);
+                }
+            }
+            span{
+                padding-right: .7rem;
+            }
+        }
+    }
+}

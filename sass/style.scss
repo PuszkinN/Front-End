@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+}
+.cut{
+    overflow: hidden;
+}
+.scroller{
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 1.8rem;
+    position: fixed;
+    right: 4vh;
+    opacity: 0;
+    bottom: 4vh;
+    border-radius: 50%;
+    background-color: rgba($color: #000000, $alpha: .6);
+    text-align: center;
+    line-height: 50px;
+    transition: .2s;
+    z-index: 10;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+@import 'variables';
+@import 'hamburger';
+@import 'header';
+@import 'about';
+@import 'technologies';
+@import 'offer';
+@import 'contact';
+@import 'portfolio';
+@import 'socials';
+@import 'footer';
+@import 'loader';

@@ -1,0 +1,104 @@
+.about{
+    width: 100%;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    max-width: $content-width;
+    color: #242E6C;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+        border-bottom: 1px solid #ddd;
+        @media screen and (min-width: 640px){
+            flex-direction: row;
+        }
+    }
+    &__picture{
+        width: 280px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    &__title{
+        font-size: 1.4rem;
+        font-weight: 300;
+        padding: .7rem 0;
+        margin-top: 3rem;
+        letter-spacing: 1px;
+        @media screen and (min-width: 640px){
+            font-size: 1.7rem;
+        }
+        &--second{
+            font-size: 2.7rem;
+            font-weight: 300;
+            padding-bottom: 1.2rem;
+            color: rgb(228, 56, 56);
+            letter-spacing: 1px;
+            &::after{
+                content: ".";
+                opacity: 0;
+                animation: dot .5s infinite alternate;
+            }
+            @media screen and (min-width: 640px){
+                font-size: 2.3rem;
+                padding-bottom: 0;
+            }
+            @media screen and (min-width: 1024px){
+                font-size: 3.3rem;
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 2rem;
+            }
+            span{
+                font-weight: 700;
+                display: block;
+                width: 100%;
+                @media screen and (min-width: 1024px){
+                    display: inline;
+                }
+            }
+        }
+    }
+    &__content{
+        text-align: left;
+        padding: 1.5rem;
+        font-size: 1.4rem;
+        line-height: 150%;
+        position: relative;
+        @media screen and (min-width: 640px){
+            font-size: 1.5rem;
+            line-height: 120%;
+        }
+        @media screen and (min-width: 731px){
+            font-size: 1.5rem;
+            line-height: 130%;
+            padding: 2rem;
+        }
+        @media screen and (min-width: 1024px){
+            font-size: 2.2rem;
+            line-height: 150%;        
+        }
+        p{
+           margin-bottom: 1.5rem; 
+           @media screen and (min-width: 640px){
+            margin-bottom: 1.2rem;
+        }
+        }
+        .name{
+            font-size: 1.2rem;
+            @media screen and (min-width: 640px){
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+@keyframes dot{
+    0%,30%{
+        opacity: 0;
+    }
+    70%,100%{
+        opacity: 1;
+    }
+
+}

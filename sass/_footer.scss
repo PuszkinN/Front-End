@@ -1,0 +1,16 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    width: 100%;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 3;
+    letter-spacing: 2px;
+    background-color: #0C0C17;
+    color: rgba(255,255,255,.4);
+}

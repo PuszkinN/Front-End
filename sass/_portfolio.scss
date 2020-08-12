@@ -1,0 +1,66 @@
+.portfolio{
+    position: relative;
+    font-family: 'Montserrat';
+    z-index: 3;
+    padding-bottom: 4rem;
+    &__title{
+        text-align: center;
+        font-size: 3.5rem;
+        letter-spacing: 1px;
+        padding: 4.5rem 0 6.5rem;
+        font-weight: 300;
+        span{
+            font-weight: 700;
+        }
+    }
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 350px);
+        position: relative;
+        gap: 25px;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    &__project{
+        position: relative;
+        overflow: hidden;
+
+        p{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 20%;
+            font-size: 2.5rem;
+            font-weight: 200;
+            letter-spacing: 1px;
+            color: #fff;
+            transition: .3s;
+            opacity: 0;
+        }
+        a{
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            color: #fff;
+            transform: translateX(-50%);
+            text-decoration: none;
+            font-size: 3rem;
+            transition: .3s;
+            opacity: 0;
+        }
+        &-img{
+            width: 100%;
+            transform: scale(1.2);
+            transition: .3s;
+            position: relative;
+            padding: 5rem 0;
+            &:hover{
+                transform: scale(1.1);
+                filter: brightness(.2);
+            }
+            &:hover + p, &:hover + p + a{
+                opacity: 1;
+            }
+        }
+    }
+}
