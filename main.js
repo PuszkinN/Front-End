@@ -1,7 +1,7 @@
-document.documentElement.classList.add('.cut');
+document.body.classList.add('.cut');
 window.addEventListener('load', function(){
     document.querySelector('.preload').style.display = 'none'
-    document.documentElement.classList.remove('.cut');
+    document.body.classList.remove('.cut');
 })
 
 const hamburger = document.querySelector('#nav-icon4')
@@ -10,7 +10,7 @@ hamburger.addEventListener('click', function(){
 })
 
 const nav = document.querySelector('.navigation');
-
+const about = document.querySelector('.about');
 window.addEventListener('scroll', function(){
     if(window.scrollY > 5 && window.innerWidth > 639){
         nav.style.animation = 'scroll-nav .5s linear both';
@@ -20,6 +20,10 @@ window.addEventListener('scroll', function(){
         nav.style.animation = 'default-nav .7s linear both';
         document.querySelector('.navigation__container').style.animation = 'scroll-nav--cont-default .4s linear both';
         document.querySelector('.down').style.display = 'block';
+    }
+    
+    if(window.scrollY >= about.offsetTop - window.innerHeight){
+        writer();
     }
 })
 const text = "Patryk Hoppe Full-stack Web developer";
@@ -40,7 +44,6 @@ const writer = (newTime) => {
     }
     requestAnimationFrame(writer);
 }
-writer();
 
 window.addEventListener('scroll', function(){
     let value = window.scrollY;

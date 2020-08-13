@@ -39,18 +39,6 @@
         padding: 1.5rem;
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
-        &:nth-of-type(1),
-        &:nth-of-type(4){
-            animation: load-left .8s linear both;
-        }
-        &:nth-of-type(3),
-        &:nth-of-type(6){
-            animation: load-right .8s linear both;
-        }
-        &:nth-of-type(2),
-        &:nth-of-type(5){
-            animation: load-down .8s linear both;
-        }
         @media screen and (min-width: 640px){
             flex-basis: 45%;
         }
@@ -81,32 +69,5 @@
                 line-height: 150%;
             }
         }
-    }
-}
-@keyframes load-left{
-    0%{
-        transform: translateX(-40vh);
-        opacity: 0;
-    }
-    50%{
-        opacity: 0;
-    }
-}
-@keyframes load-right{
-    0%{
-        transform: translateX(40vh);
-        opacity: 0;
-    }
-    50%{
-        opacity: 0;
-    }
-}
-@keyframes load-down{
-    0%{
-        transform: translateY(40vh);
-        opacity: 0;
-    }
-    50%{
-        opacity: 0;
     }
 }
