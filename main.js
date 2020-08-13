@@ -2,7 +2,7 @@ document.body.classList.add('.cut');
 window.addEventListener('load', function(){
     document.querySelector('.preload').style.display = 'none'
     document.body.classList.remove('.cut');
-})
+
 
 const hamburger = document.querySelector('#nav-icon4')
 hamburger.addEventListener('click', function(){
@@ -75,3 +75,5 @@ $(function() {
         simpleScrollTo($(this).attr('href'), 1000);
     });
 });
+
+})
